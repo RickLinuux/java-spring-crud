@@ -8,8 +8,8 @@ public class BaseConexao {
     public static Connection getConexao() {
         Connection conexao = null;
         try{
-            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/teste",
-                    "shaka", "221025");
+            conexao = DriverManager.getConnection("url",
+                    "usuario", "senha");
 
         } catch (SQLException e){
             e.printStackTrace();
